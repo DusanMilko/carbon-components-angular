@@ -501,6 +501,7 @@ export class DropdownList implements AbstractDropdownView, AfterViewInit, OnDest
 				selected = this.getSelected();
 			}
 			this.index = this.displayItems.indexOf(item);
+			selected["isUpdate"] = true;
 			this.select.emit(selected);
 		}
 	}
